@@ -1,0 +1,58 @@
+{
+	"name": "n8n-nodes-reviewflowz",
+	"version": "0.1.0",
+	"description": "Reviewflowz for n8n: every review, reply, source, rating and review-request event as a trigger; review requests, campaigns, contacts, replies, tags and sources as actions. Built on the Reviewflowz API v3.",
+	"license": "MIT",
+	"homepage": "https://api.reviewflowz.com/v3/docs",
+	"keywords": [
+		"n8n-community-node-package",
+		"reviewflowz",
+		"reviews",
+		"review requests",
+		"reputation management"
+	],
+	"author": {
+		"name": "Reviewflowz",
+		"email": "hello@reviewflowz.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/reviewflowz/n8n-nodes-reviewflowz.git"
+	},
+	"scripts": {
+		"events": "node scripts/sync-events.mjs",
+		"prebuild": "node scripts/sync-events.mjs",
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ReviewflowzApi.credentials.js",
+			"dist/credentials/ReviewflowzOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Reviewflowz/Reviewflowz.node.js",
+			"dist/nodes/Reviewflowz/ReviewflowzTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.57.4",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
