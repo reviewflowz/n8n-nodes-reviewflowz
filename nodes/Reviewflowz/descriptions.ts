@@ -436,7 +436,7 @@ const CAMPAIGN: INodeProperties[] = [
 			{ name: 'Stop With an Error', value: 'error' },
 		],
 		default: 'pause_and_resume',
-		description: 'A campaign that is on keeps sending while it changes: no one waiting for a request loses their place.',
+		description: 'A campaign that is on keeps sending while it changes: no one waiting for a request loses their place',
 		displayOptions: show('campaign', ['update']),
 	},
 	{
