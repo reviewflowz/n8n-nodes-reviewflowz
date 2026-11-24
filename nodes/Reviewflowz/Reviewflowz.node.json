@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/reviewflowz/n8n-nodes-reviewflowz?tab=readme-ov-file#credentials"
+				"url": "https://api.reviewflowz.com/v3/docs/guides/authentication"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/reviewflowz/n8n-nodes-reviewflowz?tab=readme-ov-file"
+				"url": "https://api.reviewflowz.com/v3/docs"
 			}
 		]
 	}

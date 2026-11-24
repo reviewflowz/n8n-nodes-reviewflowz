@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Package metadata: homepage and author URL point to https://reviewflowz.com; node documentation links point to the API docs.
+
 ## 0.1.0
 
 - Reviewflowz Trigger: every Reviewflowz webhook event (30), with filters. Subscribes its own webhook

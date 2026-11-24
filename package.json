@@ -1,9 +1,9 @@
 {
 	"name": "n8n-nodes-reviewflowz",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Reviewflowz for n8n: every review, reply, source, rating and review-request event as a trigger; review requests, campaigns, contacts, replies, tags and sources as actions. Built on the Reviewflowz API v3.",
 	"license": "MIT",
-	"homepage": "https://api.reviewflowz.com/v3/docs",
+	"homepage": "https://reviewflowz.com",
 	"keywords": [
 		"n8n-community-node-package",
 		"reviewflowz",
@@ -13,7 +13,8 @@
 	],
 	"author": {
 		"name": "Reviewflowz",
-		"email": "hello@reviewflowz.com"
+		"email": "hello@reviewflowz.com",
+		"url": "https://reviewflowz.com"
 	},
 	"repository": {
 		"type": "git",
