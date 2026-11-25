@@ -268,17 +268,6 @@ const REVIEW_REQUEST: INodeProperties[] = [
 		displayOptions: show('reviewRequest', SEND),
 		options: [
 			{
-				displayName: 'If the Campaign Is Off',
-				name: 'whenOff',
-				type: 'options',
-				options: [
-					{ name: 'Add Them Anyway (No Request Is Sent)', value: 'add' },
-					{ name: 'Stop With an Error', value: 'error' },
-				],
-				default: 'error',
-				description: 'People added while a campaign is off never get its request',
-			},
-			{
 				displayName: 'If They Are Already in This Campaign',
 				name: 'whenAlreadyIn',
 				type: 'options',

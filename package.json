@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-reviewflowz",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Reviewflowz for n8n: every review, reply, source, rating and review-request event as a trigger; review requests, campaigns, contacts, replies, tags and sources as actions. Built on the Reviewflowz API v3.",
 	"license": "MIT",
 	"homepage": "https://reviewflowz.com",

@@ -85,13 +85,8 @@ async function sendReviewRequest(this: IExecuteFunctions, i: number): Promise<ID
 			{ itemIndex: i },
 		);
 	}
-	if (campaign.state !== 'active' && options.whenOff !== 'add') {
-		throw new NodeOperationError(
-			this.getNode(),
-			`${name} is off, so ${email || phone || 'this customer'} would never get its request. Turn the campaign on in Reviewflowz, or set 'If the Campaign Is Off' to add them anyway.`,
-			{ itemIndex: i },
-		);
-	}
+	// A campaign that is off still takes the customer, as it does from every
+	// integration: they are saved in it and never get its request.
 
 	const contact = compact({
 		email,

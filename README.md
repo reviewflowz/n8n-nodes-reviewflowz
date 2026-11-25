@@ -79,7 +79,8 @@ Each workflow's endpoint counts toward the account's 20 webhook endpoints.
 | Business Listing | Look Up |
 
 **Send** checks the campaign before adding anyone: an email campaign needs the customer's email, a text
-campaign their phone, and a campaign that is off stops the workflow unless you choose to add them anyway.
+campaign their phone. A campaign that is off still takes the customer: they are saved in it and never get its
+request; customers added after it is turned on do.
 Someone already in the campaign is not asked twice. Your own contact fields (staff name, visit type...) fill
 the message's merge fields.
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2
+
+- Send review request adds the customer whatever the campaign's state, as an integration does. While the
+  campaign is off the customer is saved in it and never gets its request; customers added after it is turned
+  on do. The "If the Campaign Is Off" option is gone: a workflow that had it set to stop now adds the customer.
+
 ## 0.1.1
 
 - Package metadata: homepage and author URL point to https://reviewflowz.com; node documentation links point to the API docs.
